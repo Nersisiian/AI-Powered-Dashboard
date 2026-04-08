@@ -3,7 +3,7 @@
 ############################
 # Backend image
 ############################
-FROM python:3.12-slim AS backend
+FROM python:3.11-slim AS backend
 
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1 \
