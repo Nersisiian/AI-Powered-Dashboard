@@ -25,7 +25,7 @@ FROM node:20-alpine AS frontend-build
 WORKDIR /app
 
 COPY app_frontend/package.json /app/package.json
-COPY app_frontend/.babelrc /app/.babelrc
+COPY app_frontend/babel.config.cjs /app/babel.config.cjs
 COPY app_frontend/vite.config.js /app/vite.config.js
 COPY app_frontend/index.html /app/index.html
 COPY app_frontend/src /app/src
