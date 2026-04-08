@@ -1,7 +1,7 @@
 import { jest } from "@jest/globals";
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Dashboard from "../src/components/Dashboard";
+import Dashboard from "../src/components/Dashboard.jsx";
 
 test("Dashboard renders items from backend", async () => {
   global.fetch = jest.fn(() =>
