@@ -1,12 +1,12 @@
 module.exports = {
   testEnvironment: "jsdom",
-  roots: ["<rootDir>", "<rootDir>/../tests"],
+  roots: ["<rootDir>/tests"],
   setupFilesAfterEnv: ["<rootDir>/src/testSetup.js"],
   transform: {
-    "^.+\\.[jt]sx?$": "babel-jest",
+    "^.+\\.(js|jsx)$": "babel-jest",
   },
   extensionsToTreatAsEsm: [".jsx"],
-  testMatch: ["<rootDir>/../tests/frontend_tests.js"],
-  moduleFileExtensions: ["js", "jsx"],
+  testMatch: ["<rootDir>/tests/frontend_tests.js"],
+  moduleFileExtensions: ["js", "jsx", "json", "node"],
 };
 
