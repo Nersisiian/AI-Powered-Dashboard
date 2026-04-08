@@ -67,7 +67,7 @@ jobs:
         run: npm run lint
 
       - name: Jest
-        run: npm test -- ../tests/frontend_tests.js
+        run: npm test
 
   docker:
     runs-on: ubuntu-latest
