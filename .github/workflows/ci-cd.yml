@@ -112,4 +112,4 @@ jobs:
             nersissiian/ai-powered-dashboard-frontend:latest
             nersissiian/ai-powered-dashboard-frontend:sha-${{ github.sha }}
           cache-from: type=gha,scope=frontend
-          cache-to: type=gha,mode=max,scope=frontend
+          cache-to: type=gha,mode=max,scope=frontend 
